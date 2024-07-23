@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/sfwa.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- ? Custom JavaScript -->
+
+    <title>الرئيسيه</title>
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <button id="closeSidebarBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="img-log">
+            <img src="photo/logosidbar.png" alt="" />
+          </div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>ادارة المشروعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-book-open ico"></i>
+              <span>ادارة ملفات الحالة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-display ico"></i>
+              <span>ادارة التبرُعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-book-bookmark ico"></i>
+              <span>ادارة الاعضاء</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-hand-holding-droplet ico"></i>
+              <span>بنك الدم</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-right-from-bracket ico"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <input
+                    type="search"
+                    class="search-field"
+                    placeholder="بحث ..."
+                    style="display: none"
+                  />
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-message"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="dropdown-toggle profile-btn"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="all-pro">
+                  <div class="profile">
+                    <img src="photo/Ellipse .png" alt="" />
+                  </div>
+                  <div class="emmil">
+                    <h4>mohamed nasra</h4>
+                    <p>mohame@gmail.com</p>
+                  </div>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+
+        <div class="project-detalies">
+          <div class="content">
+            <div class="project-adress">
+              <h4 class="title">تفاصيل المشروع</h4>
+              <div class="end">
+                <h5
+                  class="card-status"
+                  style="
+                    margin-bottom: 0;
+                    background-color: #0d437c27;
+                    color: #0d437c;
+                  "
+                >
+                  قيد التبٌرع
+                </h5>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="photo/receipt-item.svg" alt="" />اضافة
+                        تبرُع</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="photo/edit.svg" alt="" />تعديل المشروع</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="photo/trash.svg" alt="" />حذف المشروع</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="detalis">
+              <h4 class="project-name">
+                <img src="photo/buildings.svg" alt="" />
+                <span>اسم المشروع :</span> بناء مسجد عُمر بن العاص في منطقة
+                القٌصيم الراجحي
+              </h4>
+
+              <h4>
+                <img src="photo/fourbox.svg" alt="" /><span>نوع المشروع :</span>
+                بناء مسجد
+              </h4>
+              <h4>
+                <img src="photo/money.svg" alt="" /><span>
+                  تكلفة المشروع :</span
+                >
+                85.000 ر.س
+              </h4>
+              <h4>
+                <img src="photo/location.svg" alt="" />
+                <span> موقع المشروع :</span> السعودية, القصيم , 151552ش عصام بن
+                الوليد امام برج الزهراء
+              </h4>
+              <h4 class="description">
+                <img src="photo/textone.svg" alt="" />
+                <span> وصف المشروع :</span> التخطيط والتصميم: تبدأ عملية بناء
+                المسجد بمرحلة التخطيط والتصميم، حيث يتم تحديد الموقع المناسب
+                للمسجد وتصميمه وفقاً للمعايير الهندسية والمعمارية والدينية.
+                التمويل: يتم تحديد مصادر التمويل لبناء المسجد، سواء كانت تبرعات
+                من الأفراد أو منظمات دينية أو حكومية. التراخيص والموافقات: يجب
+                الحصول على التراخيص والموافقات اللازمة من الجهات المعنية، مثل
+                البلدية والسلطات المحلية، قبل بدء عملية البناء. البنية التحتية:
+                تشمل هذه المرحلة أعمال الحفريات والتسوية وإعداد الأساسات اللازمة
+                للمسجد. الهيكل الأساسي: بعد الانتهاء من البنية التحتية، يتم بناء
+                الهيكل الأساسي للمسجد، والذي يتضمن الجدران والأعمدة والأسقف.
+                التشطيبات الداخلية: يتم في هذه المرحلة تركيب الأرضيات والجدران
+                الداخلية والأسقف، بالإضافة إلى تركيب الأبواب والنوافذ والديكورات
+                الداخلية الأخرى.
+              </h4>
+              <div class="photo-project">
+                <img src="photo/img1.png" alt="" />
+                <img src="photo/img2.png" alt="" />
+                <img src="photo/img3.png" alt="" />
+                <img src="photo/img1.png" alt="" />
+                <img src="photo/img2.png" alt="" />
+                <img src="photo/img3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="staps">
+              <div class="staps-project start-stap active">
+                <div class="right">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>تم بدأ المشروع</h4>
+                <p>8:30 PM , 2024-10-25</p>
+              </div>
+              <div class="staps-project start-stap active">
+                <div class="right">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>قيد التبُرع</h4>
+                <p>8:30 PM , 2024-10-25</p>
+              </div>
+              <div class="staps-project start-stap active">
+                <div class="right">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>تم اكتمال مبلغ التبرع</h4>
+                <p>8:30 PM , 2024-10-25</p>
+              </div>
+              <div class="staps-project">
+                <div class="right">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>تحت الانشاء</h4>
+              </div>
+              <div class="staps-project">
+                <div class="right">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>تم انهاء الانشاء</h4>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="staps-table">
+              <div class="header">
+                <h4>جميع المُتبرعين ( 12 )</h4>
+              </div>
+              <div class="fillter">
+                <div class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    type="search"
+                    placeholder="بحث باسم المتبرع او ID..."
+                  />
+                </div>
+                <div class="select">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>نوع التبرُع</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>نوع المُتبرع</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>طريقة الدفع</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    <i class="fa-solid fa-square-plus"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                       <div class="img-log">
+                        <img src="photo/Frame.png" alt="">
+                        <div class="text-log">
+                            <h4>تهانينا .. لقد تم اكتمال مبلغ التبرع بالكامل</h4>
+                            <p>تهانينا .. لقد اكملت مبلغ التبرع بالكامل , يمكنك البدأ في انشاء بكل سهولة عن طريق الخيارات و تغيير حالة المشروع</p>
+                           <a href="project_detalies_foured_status.html">
+                            <button
+                            type="button"
+                            class="sure"
+                            data-bs-dismiss="modal"
+                           
+                          >
+                         <span class="icons"> البدأ في الانشاء<i class="fa-solid fa-arrow-left"></i></span>
+                          </button>
+                           </a>
+                        </div>
+                       </div>
+                        </div>
+                        <div class="modal-footer"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="table project_detalies_second_status">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">اسم المُتبرع</th>
+                      <th scope="col">مبلغ التبرع</th>
+                      <th scope="col">نوع المتبرع</th>
+                      <th scope="col">رقم الهاتف</th>
+                      <th scope="col">رقم الهوية</th>
+                      <th scope="col">نوع البرُع</th>
+                      <th scope="col">تاريخ التبرع</th>
+                      <th scope="col">طريقة الدفع</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">#2451</th>
+                      <td>ahmed hawwam</td>
+                      <td>500 ر.س</td>
+                      <td>شركة</td>
+                      <td>01114588740</td>
+                      <td>441234554744123</td>
+                      <td>تبرع مالي</td>
+                      <td>2024-25-01</td>
+                      <td><h4 class="pay">نقدي</h4></td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton5"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton5"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-pen"></i> تعديل قيمة
+                                التبرع</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-eye"></i>عرض الملف
+                                الشخصي</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#2451</th>
+                      <td>ahmed hawwam</td>
+                      <td>500 ر.س</td>
+                      <td>شركة</td>
+                      <td>01114588740</td>
+                      <td>441234554744123</td>
+                      <td>تبرع مالي</td>
+                      <td>2024-25-01</td>
+                      <td><h4 class="banky">بنكي</h4></td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton5"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton5"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-pen"></i> تعديل قيمة
+                                التبرع</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-eye"></i>عرض الملف
+                                الشخصي</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#2451</th>
+                      <td>ahmed hawwam</td>
+                      <td>500 ر.س</td>
+                      <td>شركة</td>
+                      <td>01114588740</td>
+                      <td>441234554744123</td>
+                      <td>تبرع مالي</td>
+                      <td>2024-25-01</td>
+                      <td><h4 class="pay">نقدي</h4></td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton5"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton5"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-pen"></i> تعديل قيمة
+                                التبرع</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-eye"></i>عرض الملف
+                                الشخصي</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#2451</th>
+                      <td>ahmed hawwam</td>
+                      <td>500 ر.س</td>
+                      <td>شركة</td>
+                      <td>01114588740</td>
+                      <td>441234554744123</td>
+                      <td>تبرع مالي</td>
+                      <td>2024-25-01</td>
+                      <td><h4 class="banky">بنكي</h4></td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton5"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton5"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-pen"></i> تعديل قيمة
+                                التبرع</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-eye"></i>عرض الملف
+                                الشخصي</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#2451</th>
+                      <td>ahmed hawwam</td>
+                      <td>500 ر.س</td>
+                      <td>شركة</td>
+                      <td>01114588740</td>
+                      <td>441234554744123</td>
+                      <td>تبرع مالي</td>
+                      <td>2024-25-01</td>
+                      <td><h4 class="pay">نقدي</h4></td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton5"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton5"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-pen"></i> تعديل قيمة
+                                التبرع</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-eye"></i>عرض الملف
+                                الشخصي</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <nav aria-label="Page navigation" class="navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Function to show the modal when the page loads
+  function showModal() {
+    var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+    myModal.show();
+  }
+
+  // Call the function when the page loads
+  window.onload = showModal;
+</script>
+</html>
